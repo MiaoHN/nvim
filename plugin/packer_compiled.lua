@@ -73,6 +73,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
   },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
@@ -93,6 +97,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
   },
+  ["nvim-neoclip.lua"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/nvim-neoclip.lua"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
@@ -104,6 +112,38 @@ _G.packer_plugins = {
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+  },
+  ["popup.nvim"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/popup.nvim"
+  },
+  ["project.nvim"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/project.nvim"
+  },
+  ["telescope-dbcli.nvim"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/telescope-dbcli.nvim"
+  },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim"
+  },
+  ["telescope-media-files.nvim"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/telescope-media-files.nvim"
+  },
+  ["telescope-ultisnips.nvim"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/telescope-ultisnips.nvim"
+  },
+  ["telescope-vim-bookmarks.nvim"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/telescope-vim-bookmarks.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
   ultisnips = {
     loaded = true,

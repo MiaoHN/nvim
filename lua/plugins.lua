@@ -18,6 +18,22 @@ return require('packer').startup(function(use)
 
   use 'SirVer/ultisnips'
 
+  -- dashboard
+  use 'glepnir/dashboard-nvim'
+
+  -- Telescope
+  use "nvim-lua/popup.nvim"
+  use "nvim-lua/plenary.nvim"
+  use "nvim-telescope/telescope.nvim"
+  use "nvim-telescope/telescope-media-files.nvim"
+  use "AckslD/nvim-neoclip.lua"
+  use {"nvim-telescope/telescope-fzf-native.nvim", run = "make"}
+  use "fhill2/telescope-ultisnips.nvim"
+  use {"mark-coyle/telescope-dbcli.nvim"}
+  use "tom-anders/telescope-vim-bookmarks.nvim"
+
+  -- project
+  use "ahmedkhalf/project.nvim"
 
   -- git
   use {
