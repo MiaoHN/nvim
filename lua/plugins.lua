@@ -27,6 +27,17 @@ return require('packer').startup(function(use)
   -- undotree
   use 'mbbill/undotree'
 
+  -- Plugins for markdown
+  use "dhruvasagar/vim-table-mode"
+  use {"yaocccc/markdown-preview.nvim", config = "vim.call('mkdp#util#install')"}
+  use "520Matches/fcitx5.vim"
+  use "ekickx/clipboard-image.nvim"
+  use "rafcamlet/simple-wiki.nvim"
+  use {"ellisonleao/glow.nvim", run = function()
+          require("glow").download_glow()
+      end}
+  use 'mzlogin/vim-markdown-toc'
+
   -- Colorscheme
   use "folke/tokyonight.nvim"
 

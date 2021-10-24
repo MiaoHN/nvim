@@ -73,6 +73,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/bufferline.nvim"
   },
+  ["clipboard-image.nvim"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/clipboard-image.nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
@@ -80,6 +84,10 @@ _G.packer_plugins = {
   ["dashboard-nvim"] = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
+  },
+  ["fcitx5.vim"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/fcitx5.vim"
   },
   ["galaxyline.nvim"] = {
     loaded = true,
@@ -89,9 +97,18 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
   },
+  ["glow.nvim"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/glow.nvim"
+  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/lspkind-nvim"
+  },
+  ["markdown-preview.nvim"] = {
+    config = { "vim.call('mkdp#util#install')" },
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -133,6 +150,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/project.nvim"
   },
+  ["simple-wiki.nvim"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/simple-wiki.nvim"
+  },
   ["telescope-dbcli.nvim"] = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/telescope-dbcli.nvim"
@@ -172,10 +193,22 @@ _G.packer_plugins = {
   ["vim-autoformat"] = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/vim-autoformat"
+  },
+  ["vim-markdown-toc"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/vim-markdown-toc"
+  },
+  ["vim-table-mode"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/vim-table-mode"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: markdown-preview.nvim
+time([[Config for markdown-preview.nvim]], true)
+vim.call('mkdp#util#install')
+time([[Config for markdown-preview.nvim]], false)
 if should_profile then save_profiles() end
 
 end)
