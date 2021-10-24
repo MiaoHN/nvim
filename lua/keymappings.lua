@@ -33,3 +33,8 @@ vim.api.nvim_set_keymap('n', 'K', '5k', { noremap=true,silent=true })
 -- tab complete
 vim.api.nvim_set_keymap('i', '<expr><TAB>', 'pumvisible() ? \"\\<c-n>\" : \"\\<TAB>\"', { noremap = true,silent = true })
 
+-- undo
+vim.api.nvim_set_keymap('n', 'U', ':UndotreeToggle<CR>', { noremap = true,silent = true })
+
+
+

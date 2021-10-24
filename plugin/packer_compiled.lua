@@ -69,6 +69,10 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/bufferline.nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
@@ -76,6 +80,10 @@ _G.packer_plugins = {
   ["dashboard-nvim"] = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
+  },
+  ["galaxyline.nvim"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
@@ -88,6 +96,10 @@ _G.packer_plugins = {
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/nvim-cmp"
+  },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
@@ -145,9 +157,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/tokyonight.nvim"
+  },
   ultisnips = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/ultisnips"
+  },
+  undotree = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/undotree"
+  },
+  ["vim-autoformat"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/vim-autoformat"
   }
 }
 

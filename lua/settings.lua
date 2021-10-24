@@ -6,6 +6,8 @@ vim.o.cursorline = true
 vim.o.encoding = 'utf-8'
 vim.o.swapfile = false
 vim.o.scrolloff = 5
+vim.o.termguicolors = true
+vim.o.mouse = 'a'
 
 -- search
 vim.o.ignorecase = true

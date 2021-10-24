@@ -18,6 +18,24 @@ return require('packer').startup(function(use)
 
   use 'SirVer/ultisnips'
 
+  -- AutoFormat
+  use "Chiel92/vim-autoformat"
+
+  -- colorizar
+  use 'norcalli/nvim-colorizer.lua'
+
+  -- undotree
+  use 'mbbill/undotree'
+
+  -- Colorscheme
+  use "folke/tokyonight.nvim"
+
+  -- status line
+  use {'glepnir/galaxyline.nvim', branch = 'main'}
+
+  -- buffer_line
+  use 'akinsho/bufferline.nvim'
+
   -- dashboard
   use 'glepnir/dashboard-nvim'
 
