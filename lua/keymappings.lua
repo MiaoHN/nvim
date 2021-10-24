@@ -36,5 +36,8 @@ vim.api.nvim_set_keymap('i', '<expr><TAB>', 'pumvisible() ? \"\\<c-n>\" : \"\\<T
 -- undo
 vim.api.nvim_set_keymap('n', 'U', ':UndotreeToggle<CR>', { noremap = true,silent = true })
 
+-- markdown
+vim.api.nvim_set_keymap('n', '<C-v>', ':PasteImg<CR>', { noremap = true,silent = true })
+
 
 

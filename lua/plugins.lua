@@ -38,6 +38,8 @@ return require('packer').startup(function(use)
       end}
   use 'mzlogin/vim-markdown-toc'
 
+  use 'ferrine/md-img-paste.vim'
+
   -- Colorscheme
   use "folke/tokyonight.nvim"
 

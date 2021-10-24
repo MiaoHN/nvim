@@ -110,6 +110,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim"
   },
+  ["md-img-paste.vim"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/md-img-paste.vim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/nvim-cmp"
