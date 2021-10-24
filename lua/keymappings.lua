@@ -9,7 +9,6 @@ vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', { noremap=true,
 -- hl
 vim.api.nvim_set_keymap('n', '<Leader><Leader>', ':set hlsearch!<CR>', { noremap=true,silent=true })
 
-
 -- window movement
 vim.api.nvim_set_keymap('n', '<Leader>h', '<C-w>h', { noremap=true,silent=true })
 vim.api.nvim_set_keymap('n', '<Leader>j', '<C-w>j', { noremap=true,silent=true })
@@ -30,4 +29,7 @@ vim.api.nvim_set_keymap('i', 'jj', '<Esc>', { noremap=true,silent=true })
 -- better movement
 vim.api.nvim_set_keymap('n', 'J', '5j', { noremap=true,silent=true })
 vim.api.nvim_set_keymap('n', 'K', '5k', { noremap=true,silent=true })
+
+-- tab complete
+vim.api.nvim_set_keymap('i', '<expr><TAB>', 'pumvisible() ? \"\\<c-n>\" : \"\\<TAB>\"', { noremap = true,silent = true })
 

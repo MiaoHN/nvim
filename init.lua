@@ -6,3 +6,5 @@ require('colorscheme')
 -- plugins
 require('plugins')
 require('nv-nvim-tree')
+require('nv-nvim-lsp')
+require('nv-nvim-cmp')

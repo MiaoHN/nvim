@@ -69,9 +69,21 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
+  },
+  ["lspkind-nvim"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/lspkind-nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/nvim-cmp"
+  },
+  ["nvim-lsp-installer"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -84,6 +96,10 @@ _G.packer_plugins = {
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+  },
+  ultisnips = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/ultisnips"
   }
 }
 
