@@ -249,6 +249,10 @@ _G.packer_plugins = {
   ["vim-table-mode"] = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/vim-table-mode"
+  },
+  vimtex = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/vimtex"
   }
 }
 

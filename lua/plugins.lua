@@ -85,6 +85,10 @@ return require('packer').startup(function(use)
   -- project
   use "ahmedkhalf/project.nvim"
 
+
+  -- latex
+  use 'lervag/vimtex'
+
   -- git
   use {
     'lewis6991/gitsigns.nvim',
