@@ -42,4 +42,10 @@ vim.api.nvim_set_keymap('n', 'U', ':UndotreeToggle<CR>', { noremap = true,silent
 -- comment quicker
 vim.api.nvim_set_keymap('n', '<Leader>c', ':CommentToggle<CR>', { noremap = true,silent = true })
 
+-- Vista
+vim.api.nvim_set_keymap('n', '<Leader>v', ':Vista!!<CR>', { noremap = true,silent = true })
+
+-- ctags jump
+vim.api.nvim_set_keymap('n', 'gd', '<C-]>', { noremap = true,silent = true })
+vim.api.nvim_set_keymap('n', 'gb', '<C-t>', { noremap = true,silent = true })
 

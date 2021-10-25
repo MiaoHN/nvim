@@ -3,11 +3,11 @@ local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 if fn.empty(fn.glob(install_path)) > 0 then
   packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
 end
-
+ 
 return require('packer').startup(function(use)
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
-
+ 
   use {
     'neovim/nvim-lspconfig',
     'williamboman/nvim-lsp-installer',
@@ -23,6 +23,18 @@ return require('packer').startup(function(use)
   use "hrsh7th/cmp-calc"
 
   use 'SirVer/ultisnips'
+
+  -- vista
+  use 'liuchengxu/vista.vim'
+
+  -- ctags
+  -- use 'szw/vim-tags'
+
+  -- cursor
+  use 'mg979/vim-visual-multi'
+
+  -- easy align
+  use 'junegunn/vim-easy-align'
 
   -- AutoFormat
   use "Chiel92/vim-autoformat"

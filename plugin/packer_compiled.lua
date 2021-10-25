@@ -238,6 +238,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/vim-autoformat"
   },
+  ["vim-easy-align"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/vim-easy-align"
+  },
   ["vim-markdown-toc"] = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/vim-markdown-toc"
@@ -250,9 +254,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/vim-table-mode"
   },
+  ["vim-visual-multi"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/vim-visual-multi"
+  },
   vimtex = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/vimtex"
+  },
+  ["vista.vim"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/vista.vim"
   }
 }
 
