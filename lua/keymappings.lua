@@ -37,7 +37,9 @@ vim.api.nvim_set_keymap('i', '<expr><TAB>', 'pumvisible() ? \"\\<c-n>\" : \"\\<T
 vim.api.nvim_set_keymap('n', 'U', ':UndotreeToggle<CR>', { noremap = true,silent = true })
 
 -- markdown
-vim.api.nvim_set_keymap('n', '<C-v>', ':PasteImg<CR>', { noremap = true,silent = true })
+-- vim.api.nvim_set_keymap('n', '<C-V>', ':PasteImg<CR>', { noremap = true,silent = true })
 
+-- comment quicker
+vim.api.nvim_set_keymap('n', '<Leader>c', ':CommentToggle<CR>', { noremap = true,silent = true })
 
 

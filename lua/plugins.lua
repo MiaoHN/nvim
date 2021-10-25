@@ -15,14 +15,32 @@ return require('packer').startup(function(use)
   use 'onsails/lspkind-nvim'
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
+  use "hrsh7th/cmp-path"
+  use "hrsh7th/cmp-nvim-lua"
+  use "hrsh7th/cmp-emoji"
+  use 'f3fora/cmp-spell'
+  use 'ray-x/cmp-treesitter'
+  use "hrsh7th/cmp-calc"
 
   use 'SirVer/ultisnips'
 
   -- AutoFormat
   use "Chiel92/vim-autoformat"
 
+  -- Automatically pair
+  use "jiangmiao/auto-pairs"
+
   -- colorizar
   use 'norcalli/nvim-colorizer.lua'
+
+  -- Interesting todo comment
+  use "folke/todo-comments.nvim"
+
+  -- Comment quickly
+  use "terrortylor/nvim-comment"
+
+  -- transparent
+  -- use 'tribela/vim-transparent'
 
   -- undotree
   use 'mbbill/undotree'
@@ -42,6 +60,7 @@ return require('packer').startup(function(use)
 
   -- Colorscheme
   use "folke/tokyonight.nvim"
+  use 'sickill/vim-monokai'
 
   -- status line
   use {'glepnir/galaxyline.nvim', branch = 'main'}
@@ -74,6 +93,7 @@ return require('packer').startup(function(use)
     },
     -- tag = 'release' -- To use the latest release
   }
+  use 'kdheepak/lazygit.nvim'
 
 
   -- Automatically set up your configuration after cloning packer.nvim
