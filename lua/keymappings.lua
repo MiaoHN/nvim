@@ -48,7 +48,7 @@ vim.api.nvim_set_keymap('x', '<Leader>c', ':CommentToggle<CR>', { noremap = true
 vim.api.nvim_set_keymap('n', '<Leader>v', ':Vista!!<CR>', { noremap = true,silent = true })
 
 -- lazygit
-vim.api.nvim_set_keymap('n', 'lg', ':LazyGit<CR>', { noremap = true,silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>g', ':LazyGit<CR>', { noremap = true,silent = true })
 
 
 -- lspconfig
@@ -60,6 +60,6 @@ vim.api.nvim_set_keymap('n', '[d', '<Cmd>lua vim.lsp.diagnostic.goto_prev()<CR>'
 vim.api.nvim_set_keymap('n', ']d', '<Cmd>lua vim.lsp.diagnostic.goto_next()<CR>', { noremap = true,silent = true })
 
 -- lspsaga
-vim.api.nvim_set_keymap('n', 'gh', ':Lspsaga lsp_finder<CR>', { noremap = true,silent = true })
-vim.api.nvim_set_keymap('n', 'gh', ':Lspsaga lsp_finder<CR>', { noremap = true,silent = true })
+-- vim.api.nvim_set_keymap('n', 'gh', ':Lspsaga lsp_finder<CR>', { noremap = true,silent = true })
+-- vim.api.nvim_set_keymap('n', 'gd', ':Lspsaga preview_definition<CR>', { noremap = true,silent = true })
 
