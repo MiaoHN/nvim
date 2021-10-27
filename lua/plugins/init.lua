@@ -27,9 +27,6 @@ return require('packer').startup(function(use)
   -- vista
   use 'liuchengxu/vista.vim'
 
-  -- ctags
-  -- use 'szw/vim-tags'
-
   -- cursor
   use 'mg979/vim-visual-multi'
 
