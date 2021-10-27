@@ -1,1 +1,8 @@
 # nvim
+
+## Plugins
+
+| name | effect |
+| ---- | ------ |
+|      |        |
+

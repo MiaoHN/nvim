@@ -1,5 +1,5 @@
 -- monokai
-vim.cmd[[colorscheme monokai]]
+vim.cmd[[colorscheme gruvbox]]
 
 -- tokyonight
 -- vim.cmd[[colorscheme tokyonight]]
