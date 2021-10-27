@@ -22,6 +22,8 @@ return require('packer').startup(function(use)
   use 'ray-x/cmp-treesitter'
   use "hrsh7th/cmp-calc"
 
+  use 'glepnir/lspsaga.nvim'
+
   use 'SirVer/ultisnips'
 
   -- vista
