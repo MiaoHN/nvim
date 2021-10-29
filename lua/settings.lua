@@ -24,7 +24,7 @@ vim.o.expandtab = true
 -- indent
 vim.o.autoindent = true
 vim.o.cindent = true
-vim.o.smartindent = true
+vim.o.smartindent = false
 
 -- statusline and tabline
 vim.o.laststatus = 2

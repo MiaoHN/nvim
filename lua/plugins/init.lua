@@ -110,6 +110,11 @@ return require('packer').startup(function(use)
   }
   use 'kdheepak/lazygit.nvim'
 
+  -- verilog support
+  use 'vhda/verilog_systemverilog.vim'
+
+  use 'liuchengxu/space-vim-theme'
+  use 'rakr/vim-two-firewatch'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

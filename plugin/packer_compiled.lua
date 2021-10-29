@@ -198,6 +198,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/simple-wiki.nvim"
   },
+  ["space-vim-theme"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/space-vim-theme"
+  },
   ["telescope-dbcli.nvim"] = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/telescope-dbcli.nvim"
@@ -238,6 +242,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/undotree"
   },
+  ["verilog_systemverilog.vim"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/verilog_systemverilog.vim"
+  },
   ["vim-autoformat"] = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/vim-autoformat"
@@ -257,6 +265,10 @@ _G.packer_plugins = {
   ["vim-table-mode"] = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/vim-table-mode"
+  },
+  ["vim-two-firewatch"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/vim-two-firewatch"
   },
   ["vim-visual-multi"] = {
     loaded = true,
