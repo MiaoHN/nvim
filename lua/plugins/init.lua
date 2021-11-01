@@ -96,6 +96,9 @@ return require('packer').startup(function(use)
   -- project
   use "ahmedkhalf/project.nvim"
 
+  -- bookmarks
+  use 'MattesGroeger/vim-bookmarks'
+
 
   -- latex
   use 'lervag/vimtex'

@@ -250,6 +250,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/vim-autoformat"
   },
+  ["vim-bookmarks"] = {
+    loaded = true,
+    path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/vim-bookmarks"
+  },
   ["vim-easy-align"] = {
     loaded = true,
     path = "/home/miaohn/.local/share/nvim/site/pack/packer/start/vim-easy-align"

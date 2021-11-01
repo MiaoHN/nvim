@@ -63,3 +63,6 @@ vim.api.nvim_set_keymap('n', ']d', '<Cmd>lua vim.lsp.diagnostic.goto_next()<CR>'
 -- vim.api.nvim_set_keymap('n', 'gh', ':Lspsaga lsp_finder<CR>', { noremap = true,silent = true })
 -- vim.api.nvim_set_keymap('n', 'gd', ':Lspsaga preview_definition<CR>', { noremap = true,silent = true })
 
+-- bookmarks
+vim.api.nvim_set_keymap('n', '<Leader>b', ':BookmarkToggle<CR>', { noremap = true,silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>B', ':BookmarkShowAll<CR>', { noremap = true,silent = true })
