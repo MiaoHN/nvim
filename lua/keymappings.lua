@@ -62,6 +62,8 @@ vim.api.nvim_set_keymap('n', ']d', '<Cmd>lua vim.lsp.diagnostic.goto_next()<CR>'
 -- lspsaga
 -- vim.api.nvim_set_keymap('n', 'gh', ':Lspsaga lsp_finder<CR>', { noremap = true,silent = true })
 -- vim.api.nvim_set_keymap('n', 'gd', ':Lspsaga preview_definition<CR>', { noremap = true,silent = true })
+vim.api.nvim_set_keymap('n', '<C-t>', ':Lspsaga open_floaterm<CR>', { noremap = true,silent = true })
+vim.api.nvim_set_keymap('t', '<C-t>', '<C-\\><C-n>:Lspsaga close_floaterm<CR>', { noremap = true,silent = true })
 
 -- bookmarks
 vim.api.nvim_set_keymap('n', '<Leader>b', ':BookmarkToggle<CR>', { noremap = true,silent = true })
