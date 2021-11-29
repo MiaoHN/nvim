@@ -8,25 +8,8 @@ return require('packer').startup(function(use)
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
 
-  use {
-    'neovim/nvim-lspconfig',
-    'williamboman/nvim-lsp-installer',
-  }
-  use 'onsails/lspkind-nvim'
-  use 'hrsh7th/nvim-cmp'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use "hrsh7th/cmp-path"
-  use "hrsh7th/cmp-nvim-lua"
-  use "hrsh7th/cmp-emoji"
-  use 'f3fora/cmp-spell'
-  use 'ray-x/cmp-treesitter'
-  use "hrsh7th/cmp-calc"
-
-  use 'askinho/toggleterm.nvim'
-
-  use 'glepnir/lspsaga.nvim'
-
-  use 'SirVer/ultisnips'
+  -- coc
+  use 'neoclide/coc.nvim'
 
   -- vista
   use 'liuchengxu/vista.vim'
@@ -51,9 +34,6 @@ return require('packer').startup(function(use)
 
   -- Comment quickly
   use "terrortylor/nvim-comment"
-
-  -- transparent
-  -- use 'tribela/vim-transparent'
 
   -- undotree
   use 'mbbill/undotree'
