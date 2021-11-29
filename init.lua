@@ -1,3 +1,7 @@
+_G.vim = vim
+
+require('globals')
+vim.cmd('syntax enable')
 -- general
 require('keymappings')
 require('settings')
@@ -5,6 +9,7 @@ require('colorscheme')
 
 -- plugins
 require('plugins')
+require('plugins.coc')
 require('plugins.nvim-tree')
 require('plugins.git')
 require('plugins.dashboard')

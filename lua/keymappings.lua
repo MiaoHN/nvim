@@ -50,21 +50,21 @@ vim.api.nvim_set_keymap('n', '<Leader>v', ':Vista!!<CR>', { noremap = true,silen
 -- lazygit
 vim.api.nvim_set_keymap('n', '<Leader>g', ':LazyGit<CR>', { noremap = true,silent = true })
 
-
--- lspconfig
-vim.api.nvim_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', { noremap = true,silent = true })
-vim.api.nvim_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', { noremap = true,silent = true })
-vim.api.nvim_set_keymap('n', 'H',  '<Cmd>lua vim.lsp.buf.hover()<CR>', { noremap = true,silent = true })
-vim.api.nvim_set_keymap('n', 'gr', '<Cmd>lua vim.lsp.buf.reference()<CR>', { noremap = true,silent = true })
-vim.api.nvim_set_keymap('n', '[d', '<Cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', { noremap = true,silent = true })
-vim.api.nvim_set_keymap('n', ']d', '<Cmd>lua vim.lsp.diagnostic.goto_next()<CR>', { noremap = true,silent = true })
-
--- lspsaga
--- vim.api.nvim_set_keymap('n', 'gh', ':Lspsaga lsp_finder<CR>', { noremap = true,silent = true })
--- vim.api.nvim_set_keymap('n', 'gd', ':Lspsaga preview_definition<CR>', { noremap = true,silent = true })
-vim.api.nvim_set_keymap('n', '<Leader>T', ':Lspsaga open_floaterm<CR>', { noremap = true,silent = true })
-vim.api.nvim_set_keymap('t', '<Leader>T', '<C-\\><C-n>:Lspsaga close_floaterm<CR>', { noremap = true,silent = true })
-
 -- bookmarks
 vim.api.nvim_set_keymap('n', '<Leader>b', ':BookmarkToggle<CR>',  { noremap = true,silent = true })
 vim.api.nvim_set_keymap('n', '<Leader>B', ':BookmarkShowAll<CR>', { noremap = true,silent = true })
+
+-- coc.nvim
+local api = vim.api
+local fn = vim.fn
+local keybind = mhn.keybind
+local cmd = keybind.cmd
+local cr = keybind.cr
+keybind.load_maps({
+  ['n|gd'] = cmd('<Plug>(coc-definition)'):silent(),
+  ['n|gy'] = cmd('<Plug>(coc-type-definition)'):silent(),
+  ['n|gi'] = cmd('<Plug>(coc-implementation)'):silent(),
+  ['n|gr'] = cmd('<Plug>(coc-references)'):silent(),
+})
+
+
