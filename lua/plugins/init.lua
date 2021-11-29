@@ -1,7 +1,7 @@
 local fn = vim.fn
 local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 if fn.empty(fn.glob(install_path)) > 0 then
-  packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+  Packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
 end
 
 return require('packer').startup(function(use)
@@ -76,7 +76,8 @@ return require('packer').startup(function(use)
   use 'sickill/vim-monokai'
 
   -- status line
-  use {'glepnir/galaxyline.nvim', branch = 'main'}
+  -- use {'glepnir/galaxyline.nvim', branch = 'main'}
+  use 'itchyny/lightline.vim'
 
   -- buffer_line
   use 'akinsho/bufferline.nvim'
@@ -101,7 +102,6 @@ return require('packer').startup(function(use)
   -- bookmarks
   use 'MattesGroeger/vim-bookmarks'
 
-
   -- latex
   use 'lervag/vimtex'
 
@@ -123,7 +123,7 @@ return require('packer').startup(function(use)
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
-  if packer_bootstrap then
+  if Packer_bootstrap then
     require('packer').sync()
   end
 end)

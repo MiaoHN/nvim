@@ -1,2 +1,2 @@
-vim.cmd[[colorscheme two-firewatch]]
+vim.cmd[[colorscheme space_vim_theme]]
 
