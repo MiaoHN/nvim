@@ -1,7 +1,7 @@
 _G.vim = vim
 
-require('globals')
 vim.cmd('syntax enable')
+require('globals')
 -- general
 require('keymappings')
 require('settings')
