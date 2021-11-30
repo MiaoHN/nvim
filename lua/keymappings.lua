@@ -55,16 +55,5 @@ vim.api.nvim_set_keymap('n', '<Leader>b', ':BookmarkToggle<CR>',  { noremap = tr
 vim.api.nvim_set_keymap('n', '<Leader>B', ':BookmarkShowAll<CR>', { noremap = true,silent = true })
 
 -- coc.nvim
-local api = vim.api
-local fn = vim.fn
-local keybind = mhn.keybind
-local cmd = keybind.cmd
-local cr = keybind.cr
-keybind.load_maps({
-  ['n|gd'] = cmd('<Plug>(coc-definition)'):silent(),
-  ['n|gy'] = cmd('<Plug>(coc-type-definition)'):silent(),
-  ['n|gi'] = cmd('<Plug>(coc-implementation)'):silent(),
-  ['n|gr'] = cmd('<Plug>(coc-references)'):silent(),
-})
 
 

@@ -10,6 +10,8 @@ vim.o.termguicolors = true
 vim.o.wrap = true
 vim.o.linebreak = true
 vim.o.mouse = 'a'
+vim.o.hidden = true
+vim.o.signcolumn = 'number'
 
 -- search
 vim.o.ignorecase = true
