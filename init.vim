@@ -9,8 +9,8 @@ set number
 set relativenumber
 set cursorline
 set smarttab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set smartindent
 set textwidth=80 " 设置行宽
@@ -27,7 +27,7 @@ set smartcase
 exec "nohlsearch"
 set mouse+=a
 set list
-set listchars=tab:»■,trail:■
+set listchars=tab:\|\ ,trail:▫
 set scrolloff=5
 set showmatch " 自动高亮对应符号
 set noerrorbells " 出错时不发出响声
@@ -52,8 +52,8 @@ map <LEADER>j <C-w>j
 map <LEADER>k <C-w>k
 map <LEADER>l <C-w>l
 
-map <up>    : res +5<CR>
-map <down>  : res -5<CR>
+map <up>    : res -5<CR>
+map <down>  : res +5<CR>
 map <left>  : vertical resize+5<CR>
 map <right> : vertical resize-5<CR>
 
@@ -62,8 +62,6 @@ map th :-tabnext<CR>
 
 " Press space twice to jump to the next '<++>' and edit it
 " map <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l
-
-
 
 " ===
 " === vim plug
@@ -137,8 +135,6 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 
 call plug#end()
 
-
-
 " ===
 " === airline
 " ===
@@ -190,7 +186,7 @@ let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
-" Enable NERDCommenterToggle to check all selected lines is commented or not 
+" Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
 
 
