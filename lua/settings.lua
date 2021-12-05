@@ -3,15 +3,15 @@ vim.o.number = true
 vim.o.relativenumber = true
 vim.o.ruler = true
 vim.o.cursorline = true
-vim.o.encoding = 'utf-8'
+vim.o.encoding = "utf-8"
 vim.o.swapfile = false
 vim.o.scrolloff = 5
 vim.o.termguicolors = true
 vim.o.wrap = true
 vim.o.linebreak = true
-vim.o.mouse = 'a'
+vim.o.mouse = "a"
 vim.o.hidden = true
-vim.o.signcolumn = 'number'
+vim.o.signcolumn = "number"
 
 -- search
 vim.o.ignorecase = true

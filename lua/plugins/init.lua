@@ -12,6 +12,8 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 return require("packer").startup(function(use)
+	use("wbthomason/packer.nvim")
+
 	use("kyazdani42/nvim-web-devicons")
 	use("kyazdani42/nvim-tree.lua")
 
@@ -40,11 +42,13 @@ return require("packer").startup(function(use)
 	use("folke/todo-comments.nvim")
 
 	-- Comment quickly
-	use("preservim/nerdcommenter")
-	-- use("terrortylor/nvim-comment")
+	use("terrortylor/nvim-comment")
 
 	-- undotree
 	use("mbbill/undotree")
+
+	-- Debug
+	use("puremourning/vimspector")
 
 	-- Plugins for markdown
 	use("dhruvasagar/vim-table-mode")
