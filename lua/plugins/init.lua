@@ -68,7 +68,6 @@ return require("packer").startup(function(use)
 
 	-- Colorscheme
 	use("folke/tokyonight.nvim")
-	use("sickill/vim-monokai")
 
 	-- status line
 	-- use {'glepnir/galaxyline.nvim', branch = 'main'}
