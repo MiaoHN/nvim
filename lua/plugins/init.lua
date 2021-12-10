@@ -70,6 +70,7 @@ packer.startup(function(use)
 
 	-- Colorscheme
 	use("folke/tokyonight.nvim")
+	use("shaunsingh/nord.nvim")
 
 	-- status line
 	-- use {'glepnir/galaxyline.nvim', branch = 'main'}
@@ -80,6 +81,12 @@ packer.startup(function(use)
 
 	-- dashboard
 	use("glepnir/dashboard-nvim")
+
+	-- treesitter
+	use({
+		"nvim-treesitter/nvim-treesitter",
+		run = ":TSUpdate",
+	})
 
 	-- Telescope
 	use("nvim-lua/popup.nvim")
@@ -136,3 +143,4 @@ require("plugins.commenter")
 require("plugins.latex")
 require("plugins.vista")
 require("plugins.autoformat")
+require("plugins.nvim-treesitter")

@@ -1,4 +1,5 @@
-require("bufferline").setup({
+local bufferline = require("bufferline")
+bufferline.setup({
 	options = {
 		numbers = "none",
 		close_command = "bdelete! %d", -- can be a string | function, see "Mouse actions"
