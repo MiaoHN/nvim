@@ -11,7 +11,9 @@ if fn.empty(fn.glob(install_path)) > 0 then
 	})
 end
 
-return require("packer").startup(function(use)
+local packer = require("packer")
+
+packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 
 	use("kyazdani42/nvim-web-devicons")
@@ -121,3 +123,16 @@ return require("packer").startup(function(use)
 		require("packer").sync()
 	end
 end)
+
+require("plugins.coc")
+require("plugins.nvim-tree")
+require("plugins.git")
+require("plugins.dashboard")
+require("plugins.project")
+require("plugins.bufferline")
+require("plugins.lightline")
+require("plugins.markdown")
+require("plugins.commenter")
+require("plugins.latex")
+require("plugins.vista")
+require("plugins.autoformat")
