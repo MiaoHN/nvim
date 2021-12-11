@@ -7,7 +7,9 @@ local opt = {
 	silent = true,
 }
 -- disable <Space> in normal mode
-map("n", "<Space>", "<NOP>", { noremap = true, silent = true })
+map("n", "<Space>", "<NOP>", opt)
+
+map("n", ";", ":", opt)
 
 -- explore tree
 map("n", "<Leader>e", ":NvimTreeToggle<CR>", opt)
