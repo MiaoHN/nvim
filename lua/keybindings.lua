@@ -21,6 +21,11 @@ map("n", "<LEADER>l", "<C-w>l", opt)
 
 map("n", "<LEADER>e", ":NvimTreeToggle<CR>", opt)
 
+-- Telescope
+map("n", "<C-p>", ":Telescope find_files<CR>", opt)
+map("n", "<LEADER>f", ":Telescope find_files<CR>", opt)
+map("n", "<LEADER>g", ":Telescope live_grep<CR>", opt)
+
 -- bufferline tab
 map("n", "<Tab>", ":BufferLineCyclePrev<CR>",opt)
 map("n", "<S-Tab>", ":BufferLineCycleNext<CR>",opt)
