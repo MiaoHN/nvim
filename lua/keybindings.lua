@@ -30,15 +30,15 @@ map("n", "<LEADER>g", ":Telescope live_grep<CR>", opt)
 map("n", "<Tab>", ":BufferLineCyclePrev<CR>",opt)
 map("n", "<S-Tab>", ":BufferLineCycleNext<CR>",opt)
 
-pluginKeys = {}
+PluginKeys = {}
 
 -- nvim-cmp 自动补全
-pluginKeys.cmp = function(cmp)
+PluginKeys.cmp = function(cmp)
   return {
     -- 上一个
-    ['<C-k>'] = cmp.mapping.select_prev_item(),
+    ['<S-Tab>'] = cmp.mapping.select_prev_item(),
     -- 下一个
-    ['<C-j>'] = cmp.mapping.select_next_item(),
+    ['<Tab>'] = cmp.mapping.select_next_item(),
     -- 出现补全
     ['<A-.>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
     -- 取消
@@ -60,7 +60,7 @@ pluginKeys.cmp = function(cmp)
 end
 
 -- lsp 回调函数快捷键设置
-pluginKeys.maplsp = function(mapbuf)
+PluginKeys.maplsp = function(mapbuf)
   -- rename
   mapbuf('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opt)
   -- code action
@@ -86,7 +86,7 @@ pluginKeys.maplsp = function(mapbuf)
 end
 
 -- gitsigns
-pluginKeys.gitsigns = {
+PluginKeys.gitsigns = {
   -- Default keymap options
   noremap = true,
 
@@ -112,4 +112,4 @@ pluginKeys.gitsigns = {
 }
 
 
-return pluginKeys
+return PluginKeys
