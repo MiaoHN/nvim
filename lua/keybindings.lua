@@ -7,6 +7,8 @@ local opt = { noremap = true, silent = true }
 map("n", "J", "9j", opt)
 map("n", "K", "9k", opt)
 
+map("n", ";", ":", opt)
+
 -- 去掉 Esc
 map("i", "jj", "<Esc>", opt)
 

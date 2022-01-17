@@ -46,6 +46,8 @@ return require('packer').startup(function(use)
   -- lspkind
   use 'onsails/lspkind-nvim'
 
+  use 'liuchengxu/vista.vim'
+
   use({
     "lewis6991/gitsigns.nvim",
     requires = {
