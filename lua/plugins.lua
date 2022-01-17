@@ -53,6 +53,8 @@ return require('packer').startup(function(use)
     },
   })
 
+  use 'nvim-lualine/lualine.nvim'
+
   if Packer_bootstrap then
     require('packer').sync()
   end

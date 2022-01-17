@@ -10,6 +10,7 @@ require('plugin-config/bufferline')
 require('plugin-config/nvim-treesitter')
 require('plugin-config/telescope')
 require('plugin-config/gitsigns')
+require('plugin-config/lualine')
 
 -- lsp
 require('lsp/setup')
