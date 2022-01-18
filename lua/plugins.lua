@@ -55,6 +55,8 @@ return require('packer').startup(function(use)
     },
   })
 
+  use 'kdheepak/lazygit.nvim'
+
   use 'nvim-lualine/lualine.nvim'
 
   if Packer_bootstrap then

@@ -32,6 +32,9 @@ map("n", "<LEADER>g", ":Telescope live_grep<CR>", opt)
 map("n", "<Tab>", ":BufferLineCyclePrev<CR>",opt)
 map("n", "<S-Tab>", ":BufferLineCycleNext<CR>",opt)
 
+-- LazyGit
+map("n", "<LEADER>g", ":LazyGit<CR>", opt)
+
 PluginKeys = {}
 
 -- nvim-cmp 自动补全
