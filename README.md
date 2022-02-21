@@ -66,7 +66,6 @@ git clone https://gitee.com/miaohn/nvim.git ~/.config/nvim
 34. [fhill2/telescope-ultisnips.nvim](https://github.com/fhill2/telescope-ultisnips.nvim)
 35. [mark-coyle/telescope-dbcli.nvim](https://github.com/mark-coyle/telescope-dbcli.nvim)
 36. [tom-anders/telescope-vim-bookmarks.nvim](https://github.com/tom-anders/telescope-vim-bookmarks.nvim)
-37. [ahmedkhalf/project.nvim](https://github.com/ahmedkhalf/project.nvim)
 38. [MattesGroeger/vim-bookmarks](https://github.com/MattesGroeger/vim-bookmarks)
 39. [lervag/vimtex](https://github.com/lervag/vimtex)
 40. [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)

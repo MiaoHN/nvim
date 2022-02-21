@@ -123,8 +123,6 @@
     "staticcheck": true
   },
 
-  "coc.source.gocode.enable": true,
-
   "languageserver": {
     "kotlin": {
       "command": "kotlin-language-server",
@@ -141,5 +139,6 @@
         "highlight": { "lsRanges": true }
       }
     }
-  }
+  },
+  "Lua.telemetry.enable": true
 }

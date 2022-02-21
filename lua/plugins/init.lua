@@ -99,9 +99,6 @@ packer.startup(function(use)
 	use({ "mark-coyle/telescope-dbcli.nvim" })
 	use("tom-anders/telescope-vim-bookmarks.nvim")
 
-	-- project
-	use("ahmedkhalf/project.nvim")
-
 	-- bookmarks
 	use("MattesGroeger/vim-bookmarks")
 
@@ -135,7 +132,6 @@ require("plugins.coc")
 require("plugins.nvim-tree")
 require("plugins.git")
 require("plugins.dashboard")
-require("plugins.project")
 require("plugins.bufferline")
 require("plugins.lightline")
 require("plugins.markdown")
