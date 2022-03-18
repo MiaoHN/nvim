@@ -11,6 +11,8 @@ map("n", "<Space>", "<NOP>", opt)
 
 map("n", ";", ":", opt)
 
+map("n", "gf", "<C-z>", opt)
+
 -- explore tree
 map("n", "<Leader>e", ":NvimTreeToggle<CR>", opt)
 
