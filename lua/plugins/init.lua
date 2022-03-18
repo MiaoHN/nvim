@@ -49,12 +49,11 @@ packer.startup(function(use)
 	-- undotree
 	use("mbbill/undotree")
 
-	-- Debug
-	use("puremourning/vimspector")
-
 	-- Colorscheme
 	use("Mofiqul/vscode.nvim")
 	use("navarasu/onedark.nvim")
+	use("liuchengxu/space-vim-theme")
+	use("rakr/vim-two-firewatch")
 	use("marko-cerovac/material.nvim")
 
 	-- status line
@@ -87,9 +86,6 @@ packer.startup(function(use)
 	-- bookmarks
 	use("MattesGroeger/vim-bookmarks")
 
-	-- latex
-	use("lervag/vimtex")
-
 	-- git
 	use({
 		"lewis6991/gitsigns.nvim",
@@ -98,12 +94,6 @@ packer.startup(function(use)
 		},
 		-- tag = 'release' -- To use the latest release
 	})
-
-	-- verilog support
-	use("vhda/verilog_systemverilog.vim")
-
-	use("liuchengxu/space-vim-theme")
-	use("rakr/vim-two-firewatch")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
@@ -119,7 +109,6 @@ require("plugins.dashboard")
 require("plugins.bufferline")
 require("plugins.lightline")
 require("plugins.commenter")
-require("plugins.latex")
 require("plugins.vista")
 require("plugins.autoformat")
 require("plugins.nvim-treesitter")
