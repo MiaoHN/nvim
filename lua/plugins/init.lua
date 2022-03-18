@@ -52,25 +52,10 @@ packer.startup(function(use)
 	-- Debug
 	use("puremourning/vimspector")
 
-	-- Plugins for markdown
-	use("dhruvasagar/vim-table-mode")
-	use({ "yaocccc/markdown-preview.nvim", config = "vim.call('mkdp#util#install')" })
-	use("520Matches/fcitx5.vim")
-	use("ekickx/clipboard-image.nvim")
-	use("rafcamlet/simple-wiki.nvim")
-	use({
-		"ellisonleao/glow.nvim",
-		run = function()
-			require("glow").download_glow()
-		end,
-	})
-	use("mzlogin/vim-markdown-toc")
-
-	use("ferrine/md-img-paste.vim")
-
 	-- Colorscheme
-	use("folke/tokyonight.nvim")
-	use("shaunsingh/nord.nvim")
+	use("Mofiqul/vscode.nvim")
+	use("navarasu/onedark.nvim")
+	use("marko-cerovac/material.nvim")
 
 	-- status line
 	-- use {'glepnir/galaxyline.nvim', branch = 'main'}
@@ -113,7 +98,6 @@ packer.startup(function(use)
 		},
 		-- tag = 'release' -- To use the latest release
 	})
-	use("kdheepak/lazygit.nvim")
 
 	-- verilog support
 	use("vhda/verilog_systemverilog.vim")
@@ -134,7 +118,6 @@ require("plugins.git")
 require("plugins.dashboard")
 require("plugins.bufferline")
 require("plugins.lightline")
-require("plugins.markdown")
 require("plugins.commenter")
 require("plugins.latex")
 require("plugins.vista")

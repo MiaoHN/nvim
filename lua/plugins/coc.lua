@@ -25,7 +25,6 @@ vim.g.coc_global_extensions = {
 	"coc-vetur",
 	"coc-yaml",
 	"coc-sumneko-lua",
-	"coc-vimtex",
 	"coc-stylua",
 	"coc-dictionary",
 	"coc-emoji",

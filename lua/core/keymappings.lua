@@ -55,9 +55,6 @@ map("x", "<Leader>c", ":CommentToggle<CR>", opt)
 -- Vista
 map("n", "<Leader>v", ":Vista!!<CR>", opt)
 
--- lazygit
-map("n", "<Leader>g", ":LazyGit<CR>", opt)
-
 -- bookmarks
 map("n", "<Leader>b", ":BookmarkToggle<CR>", opt)
 map("n", "<Leader>B", ":BookmarkShowAll<CR>", opt)

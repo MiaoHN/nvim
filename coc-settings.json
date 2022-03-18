@@ -1,7 +1,7 @@
 {
   "codeLens.enable": true,
+  "codeLens.position": "right_align",
   "coc.source.file.enable": true,
-  "coc.source.word.enable": true,
   "coc.source.emoji.enable": true,
 
   "suggest.noselect": false,
@@ -35,7 +35,6 @@
     "default": ""
   },
 
-  "diagnostic.signOffset": 2,
   "tree.openedIcon": "",
   "tree.closedIcon": "",
   "tree.key.close": "q",
@@ -52,21 +51,8 @@
   "explorer.previewAction.onHover": false,
 
   "coc.preferences.extensionUpdateCheck": "daily",
-  "coc.preferences.formatOnType": true,
-  "coc.preferences.formatOnSaveFiletypes": [
-    "lua",
-    "dart",
-    "go",
-    "html",
-    "json",
-    "javascript",
-    "css",
-    "python",
-    "c",
-    "cpp",
-    "cs",
-    "prisma"
-  ],
+  "coc.preferences.formatOnType": false,
+  "coc.preferences.formatOnSaveFiletypes": [],
 
   "diagnostic.hintSign": "",
   "diagnostic.infoSign": "",
@@ -112,7 +98,6 @@
 
   "prettier.printWidth": 90,
   "prettier.singleQuote": true,
-  "prettier.eslintIntegration": true,
 
   "eslint.autoFixOnSave": true,
 
