@@ -6,6 +6,7 @@ vim.g.coc_snippet_prev = "<C-k>"
 vim.g.coc_disable_transparent_cursor = 1
 
 vim.g.coc_global_extensions = {
+  "coc-cmake",
 	"coc-vimlsp",
 	"coc-clangd",
 	"coc-css",
