@@ -46,6 +46,9 @@ packer.startup(function(use)
 	-- Comment quickly
 	use("terrortylor/nvim-comment")
 
+  -- Doxygen
+	use("vim-scripts/DoxygenToolkit.vim")
+
 	-- undotree
 	use("mbbill/undotree")
 
