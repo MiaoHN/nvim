@@ -1,3 +1,12 @@
+
+" autoload options
+if empty(glob($HOME.'/.config/nvim/autoload/plug.vim'))
+	silent !curl -fLo $HOME/.config/nvim/autoload/plug.vim --create-dirs
+				\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+
 " ===
 " === general
 " ===
@@ -5,6 +14,7 @@
 syntax on
 set encoding=utf-8
 let &t_ut=''
+set autochdir
 set number
 set relativenumber
 set cursorline
@@ -31,13 +41,15 @@ set listchars=tab:\|\ ,trail:▫
 set scrolloff=5
 set showmatch " 自动高亮对应符号
 set noerrorbells " 出错时不发出响声
+set colorcolumn=80
+set signcolumn=yes
 
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 let mapleader=" "
-noremap <LEADER><CR> :nohlsearch<CR>
+noremap <LEADER><LEADER> :nohlsearch<CR>
 
-colorscheme snazzy
+colorscheme onedark
 
 " ===
 " === keymappings
@@ -364,8 +376,8 @@ let g:indent_guides_start_level = 2 " 从第二层开始可视化显示缩进
 " === nerdtree
 " ===
 
-map tt :NERDTreeMirror<CR>
-map tt :NERDTreeToggle<CR>
+map <LEADER>e :NERDTreeMirror<CR>
+map <LEADER>e :NERDTreeToggle<CR>
 
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
@@ -442,6 +454,16 @@ autocmd FileType apache setlocal commentstring=#\ %s
 
 nmap ]h <Plug>(GitGutterNextHunt)
 nmap [h <Plug>(GitGutterPreHunt)
+
+let g:gitgutter_sign_allow_clobber = 0
+let g:gitgutter_map_keys = 0
+let g:gitgutter_override_sign_column_highlight = 0
+let g:gitgutter_preview_win_floating = 1
+let g:gitgutter_sign_added = '▋'
+let g:gitgutter_sign_modified = '▋'
+let g:gitgutter_sign_removed = '_'
+let g:gitgutter_sign_removed_first_line = '‾'
+let g:gitgutter_sign_modified_removed = '~'
 
 
 " ===

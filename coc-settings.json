@@ -1,7 +1,7 @@
 {
   "codeLens.enable": true,
+  "codeLens.position": "right_align",
   "coc.source.file.enable": true,
-  "coc.source.word.enable": true,
   "coc.source.emoji.enable": true,
 
   "suggest.noselect": false,
@@ -111,7 +111,6 @@
 
   "prettier.printWidth": 90,
   "prettier.singleQuote": true,
-  "prettier.eslintIntegration": true,
 
   "go.goplsOptions": {
     "semanticTokens": true,
@@ -120,12 +119,20 @@
     "staticcheck": true
   },
 
-  "coc.source.gocode.enable": true,
-
   "languageserver": {
     "kotlin": {
       "command": "kotlin-language-server",
       "filetypes": ["kotlin"]
+    },
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
+      "rootPatterns": [".ccls", ".ccls-root", "compile_commands.json", ".git/", ".hg/"],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        }
+      }
     }
   }
 }
