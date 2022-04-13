@@ -49,7 +49,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 let mapleader=" "
 noremap <LEADER><LEADER> :nohlsearch<CR>
 
-colorscheme onedark
+colorscheme snazzy
 
 " ===
 " === keymappings
@@ -337,7 +337,7 @@ endfunction
 let g:coc_global_extensions = [
     \ 'coc-syntax',
     \ 'coc-vimlsp',
-    \ 'coc-jedi',
+    \ 'coc-python',
     \ 'coc-marketplace',
     \ 'coc-clangd',
     \ 'coc-actions',

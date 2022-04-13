@@ -4,6 +4,8 @@
   "coc.source.file.enable": true,
   "coc.source.emoji.enable": true,
 
+  "jedi.executable.command": "jedi-language-server",
+
   "suggest.noselect": false,
   "suggest.enablePreselect": false,
   "suggest.snippetIndicator": " ",
