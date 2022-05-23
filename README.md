@@ -1,8 +1,8 @@
 # nvim
 
-![dashboard](./img/dashboard.png)
+<div align=center><img width=80% src="./img/dashboard.png" /></div>
 
-![appearance](./img/appearance.png)
+<div align=center><img width=80% src="./img/appearance.png" /></div>
 
 这是我的 neovim 配置
 
