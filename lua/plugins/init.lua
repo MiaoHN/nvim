@@ -103,6 +103,11 @@ packer.startup(function(use)
     -- tag = 'release' -- To use the latest release
   })
 
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if Packer_bootstrap then
